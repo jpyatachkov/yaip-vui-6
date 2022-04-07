@@ -1,0 +1,17 @@
+<h1>Todo#list</h1>
+
+<h2>Done todos</h2>
+
+<ul>
+  <% @done_todos.each do |todo| %>
+    <li><%= todo[:title] %></li>
+  <% end %>
+</ul>
+
+<h2>Undone todos</h2>
+
+<ul>
+  <% @undone_todos.each do |todo| %>
+    <li><%= todo[:title] %></li>
+  <% end %>
+</ul>
