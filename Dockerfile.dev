@@ -1,0 +1,15 @@
+FROM ruby:3.1.1
+
+ENV APP_DIR /app
+
+RUN mkdir -p $APP_DIR
+
+WORKDIR $APP_DIR
+
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y gcc g++ make nodejs yarn libsqlite3-dev
+
+RUN gem install rails
+
+EXPOSE 3000
+
+CMD tail -f /dev/null
