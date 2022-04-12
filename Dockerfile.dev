@@ -6,7 +6,7 @@ RUN mkdir -p $APP_DIR
 
 WORKDIR $APP_DIR
 
-RUN apt-get update -y && apt-get upgrade -y && apt-get install -y gcc g++ make nodejs yarn libsqlite3-dev
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y gcc g++ make nodejs yarn sqlite3 libsqlite3-dev
 
 RUN gem install rails
 
