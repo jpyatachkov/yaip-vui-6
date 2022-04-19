@@ -1,0 +1,19 @@
+<h1>Зарегистрироваться</h1>
+
+<form action="<%= user_create_path %>" method="POST">
+  <div>
+    <input name="login" placeholder="Логин"/>
+  </div>
+
+  <div>
+    <input name="password" type="password" placeholder="Пароль"/>
+  </div>
+
+  <div>
+    <input name="password_confirmation" type="password" placeholder="Подтверждение пароля"/>
+  </div>
+
+  <div>
+    <input type="submit">
+  </div>
+</form>
